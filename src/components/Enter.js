@@ -12,7 +12,7 @@ const Enter = ({ handleEnter }) => {
                 cursor: 'pointer'
             }}
 
-            className="enter w-100 h-20 rounded-full border-black p-10 flex items-center justify-center">
+            className="enter rounded-full border-black p-6 flex items-center justify-center">
             <p className="text-sm text-white">ENTER</p>
             <img className="pl-1 w-6" src={Enterimg}></img>
         </motion.div>
