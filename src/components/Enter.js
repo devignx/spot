@@ -7,11 +7,11 @@ const Enter = ({ handleEnter }) => {
         <motion.div
             onClick={()=> handleEnter()}
             whileHover={{
-                scale:1.1,
+                scale:1.04,
                 cursor: 'pointer'
             }}
-            className="enter w-16 h-16 rounded-full border-black p-8 flex items-center justify-center">
-            <p className="text-xs text-white">Enter</p>
+            className="enter w-20 h-20 rounded-full border-black p-8 flex items-center justify-center">
+            <p className="text-xs text-white">ENTER</p>
         </motion.div>
     )
 }

@@ -4,6 +4,7 @@ import Enter from "../components/Enter";
 import '../styles/Home.css';
 import { motion } from "framer-motion";
 import axios from "axios";
+import connect from "../assets/connect.png"
 
 const Home = () => {
 
@@ -43,9 +44,9 @@ const Home = () => {
             <div className="w-full h-3/5 flex items-center justify-center">
                 <Enter handleEnter = {handleEnter}/>
             </div>
-            <div className="w-full h-1/5 flex items-center flex-col justify-evenly">
-                <p className="text-sm text-rose-500	">NOTE</p>
-                <p className="text-xs font-weight-light">	• connect all devices in the same wifi</p>
+            <div className="w-full h-1/5 flex items-center flex-col gap-y-2 bg-pink-100 justify-center">
+                <p className="text-xs text-rose-500 font-semibold">NOTE</p>
+                <p className="text-xs font-thin">	• Connect all devices in the same wifi</p>
             </div>
             {
                 enter && (
@@ -53,13 +54,18 @@ const Home = () => {
                          variants={variants}
                          initial="hidden"
                          animate="visible"
-                         className="absolute z-10 top-1/4 w-full h-3/4 bg-slate-900 flex items-center justify-center">
-                        <div className="w-2/4 h-4/5 flex items-center justify-evenly flex-col">
-                            <p className="text-xs text-gray-500">Before entering</p>
-                            <p className="text-base text-gray-50">Give yourself a cool Username</p>
-                            <input className="rounded  border-0 outline-0 py-1.5 w-2/4 px-3 text-xs text" type="text" placeholder="John Doe"/>
-                            <button className="rounded btn p-1 bg-white text-xs py-1.5 text-white w-2/4 border-0 outline-0">ENTER</button>
-                            <p className="cursor-pointer text-gray-300 text-xs underline" onClick={()=> handleEnter()}>Go back</p>
+                         className="absolute z-10 top-1/4 w-full h-3/4 bg-gray-900 flex items-center flex-col">
+                         <img className="w-20 -translate-y-10"  src={connect}></img>    
+                            <div className="h-4/5 flex items-center justify-evenly flex-col gap-y-3">
+                            <div className="text-center font-thin flex-col gap-y-0.5">
+                                <p className="text-xs text-gray-500">Before entering</p>
+                                <p className="text-base text-gray-50">Give yourself a cool Username</p>
+                            </div>
+                            <form className="flex items-center justify-evenly flex-col gap-y-4">
+                                    <input autoFocus className="rounded border-0 outline-0 py-1.5 px-3 text-xs w-full" type="text" placeholder="John Doe"/>
+                                    <button type="submit"onSubmit={()=> handleEnter() } className="rounded btn py-1.5 bg-white text-xs text-white border-0 outline-0 w-full">ENTER</button>
+                            </form>
+                            <p className="cursor-pointer font-thin text-gray-300 text-xs underline" onClick={()=> handleEnter()}>Go back</p>
                         </div>
                     </motion.div>
                 )
