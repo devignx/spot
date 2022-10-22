@@ -5,6 +5,7 @@ import '../styles/Home.css';
 import { motion } from "framer-motion";
 import axios from "axios";
 import connect from "../assets/connect.png"
+import { Link,useNavigate } from "react-router-dom";
 
 const Home = () => {
 
@@ -50,10 +51,10 @@ const Home = () => {
             </div>
             <div className="w-full h-1/5 flex items-center flex-col gap-y-2 bg-pink-100 justify-center md: h-1/5">
                 <p className="text-sm text-rose-500 font-semibold">NOTE</p>
-                <p className="text-xs font-thin">	
-                • Ask for Wifi Password from the organisation you are at :)<br></br>
-                • Connect all devices in the same wifi<br></br>
-                • Chat rooms are unmoderated, So behave responsively
+                <p className="text-xs font-thin">
+                    • Ask for Wifi Password from the organisation you are at :)<br></br>
+                    • Connect all devices in the same wifi<br></br>
+                    • Chat rooms are unmoderated, So behave responsively
                 </p>
             </div>
             {
@@ -70,8 +71,8 @@ const Home = () => {
                                 <p className="text-base text-gray-50">Give yourself a cool Username</p>
                             </div>
                             <form className="w-9/12 flex items-center justify-evenly flex-col gap-y-4 md:w-1/4">
-                                    <input autoFocus autoComplete="name" className="rounded border-0 outline-0 py-2.5 px-3 text-sm w-full md:py-1.5 text-xs" type="text-xs" placeholder="John Doe"/>
-                                    <button type="submit"onSubmit={()=> handleEnter() } className="rounded btn py-2.5 bg-white text-sm text-white border-0 outline-0 w-full md:py-1.5 text-xs">ENTER</button>
+                                    <input autoFocus autoComplete="name" className="rounded border-0 outline-0 py-4 px-3 text-sm w-full md:py-1.5 text-xs" type="text-xs" placeholder="John Doe"/>
+                                    <button type="submit"onSubmit={()=> handleEnter() } className="rounded btn py-4 bg-white text-sm text-white border-0 outline-0 w-full md:py-2 text-xs">ENTER</button>
                             </form>
                             <p className="cursor-pointer font-thin text-gray-300 text-xs underline" onClick={()=> handleEnter()}>Go back</p>
                         </div>
