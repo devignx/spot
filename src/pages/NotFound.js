@@ -12,9 +12,9 @@ export default function NotFound() {
     return (
         <div>
             <Nav/>
-            <div className="flex items-center flex-col gap-y-4"> 
-                <img className="w-1/4" src={error}></img>
-                <p className="text-pink-600 text-center ">OOPS! The page you requested was not found<br></br> <b className="text-slate-700">"zzzzzzzzzzzzzzzz"</b></p>
+            <div className="flex items-center justify-center flex-col gap-y-4"> 
+                <img className="w-9/12 md: w-1/4" src={error}></img>
+                <p className="text-pink-600 text-center ">OOPS! The page you requested was not found<br></br> <b className="text-slate-700">"Zzzzzzz"</b></p>
                 <div className="flex items-center justify-center  flex-col md:flex-row">
                     <Link to="/"><button className="inline-flex items-center p-4 rounded btn py-2.5 p-3 text-sm text-white md:px-5 text-xs"><img className="pr-2 pt-0.5" src={home}></img> Go Home </button></Link>
                     <p className="p-4 text-xs">or</p>
