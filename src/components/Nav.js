@@ -11,6 +11,8 @@ const Nav = () => {
                 <Link to='/About'> <p className="text-sm hover:text-pink-600">About</p></Link>
                 <Link to ='/'><p className="text-sm hover:text-pink-600">How to?</p></Link>
                 <Link to ='/'><p className="text-sm hover:text-pink-600">Docs</p></Link>
+                
+            <a href='upi://pay?pa=harimohan0502@okaxis&pn=Hari%20Prasad%20Designer&aid=uGICAgIDLmKjyIA'>Hiasddc</a>
                 </div>
             </div>
         </div>
